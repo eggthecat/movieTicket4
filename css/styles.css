@@ -1,0 +1,12 @@
+.prices{
+  display: none;
+}
+
+#matinee{
+  display:none;
+}
+
+.matineeQuantity,
+.regularQuantity{
+  display:none;
+}
