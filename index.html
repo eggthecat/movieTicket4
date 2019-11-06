@@ -22,13 +22,14 @@
               <button class="tiempo"  value="12">12pm</button>
               <button class="tiempo"  value="14">2pm</button>
               <button class="tiempo"  value="16">4pm</button>
-              <p> <span id="matinee">$5</span> </p>
+              <p> <span id="matinee">$5</span></p>
               <div class="matineeQuantity">
                 <h2>Matinee</h2>
                 <label for="quantity">Please enter the number of occupants per age group.</label>
-                <input type="number" name="quantity" value="" placeholder="under18" >
-                <input type="number" name="quantity" value="" placeholder="adult" >
-                <input type="number" name="quantity" value="" placeholder="65+" >
+                <input type="number" name="quantity" value="" class="quantity" placeholder="under18" >
+                <input type="number" name="quantity" value="" class="quantity" placeholder="adult" >
+                <input type="number" name="quantity" value="" class="quantity" placeholder="65+" >
+                <button id="matineeButton" type="button" name="button"></button>
               </div>
               <div class="regularQuantity">
                 <h2>Regular</h2>
@@ -36,7 +37,8 @@
                 <input type="number" name="quantity" value="" placeholder="under18" >
                 <input type="number" name="quantity" value="" placeholder="adult" >
                 <input type="number" name="quantity" value="" placeholder="65+" >
-              </div>
+              </div
+              <p>Total: <span id=”total”></span></p>
               <p>Please note: Matinee prices are for movies that start before 3 pm.</p>
             </div>
           </div>

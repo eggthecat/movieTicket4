@@ -2,14 +2,29 @@ $(document).ready(function(){
   $(".tiempo").click(function(event){
     event.preventDefault();
     // $(".prices").show(value);
-    $("#matinee").toggle();
-    console.log(this.value);
+
+
     var timeValue = parseInt($(".tiempo").val());
+
+    $("input.quantity").click(function(){
+      var matineeTicketQuantity = parseInt($("input.quantity").val());
+
+      console.log(this);
+
+    })
+
+ //  $(".matineeQuantity.quantity").on("keyup", function(){
+ //   var qty = $(this).val();
+ //   var price = 5;
+ //   $("#total").html(qty*price);
+ // });
+
     if (this.value < 15){
-      $(".matineeQuantity").fadeToggle();
+      $(".regularQuantity").hide();
+      $(".matineeQuantity").fadeIn();
     } else if(this.value > 15){
       $(".matineeQuantity").hide();
-      $(".regularQuantity").fadeToggle();
+      $(".regularQuantity").fadeIn();
     }
   })
 
